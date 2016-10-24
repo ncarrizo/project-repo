@@ -91,7 +91,7 @@ run_analysis <- function(filelocation = "~/Documents/GettingDataCoursera/CourseP
     names(my_data) <- gsub("Z", "Z-Axis", names(my_data))
 
     ## Writes first tidy dataset to text file
-    write.table(my_data_casted, file = "tidy_data_first.txt")
+    write.table(my_data, file = "tidy_data_first.txt")
     
     ## Creates a second, independent tidy data set with the average of 
     ## each variable for each activity and each subject.
@@ -101,6 +101,6 @@ run_analysis <- function(filelocation = "~/Documents/GettingDataCoursera/CourseP
     
     ## Write file with second tidy dataset
     setwd(filelocation)
-    write.table(my_data_casted, file = "tidy_data.txt")
+    write.table(my_data_casted, file = "tidy_data.txt", row.names = FALSE)
     my_data_casted
 }

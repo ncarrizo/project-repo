@@ -6,10 +6,10 @@ October 24, 2016
 
 ## Description of run_analysis.R script
 
-The run_analysis.R script conducts the following tasks:
+The run_analysis.R script takes as an input the location to which you would like to download the file, and conducts the following tasks:
 
 1. Loads the dplyr and reshape packages 
-2. Downloads the UCI HAR dataset and unzips it
+2. Downloads the UCI HAR dataset to the designated location and unzips it
 3. Reads into R the activity labels, features, test and training datasets and their accompanying subject and activity code data
 4. Binds the activity codes and subject IDs to the test and the training sets
 5. Combines the test and the training sets together
@@ -105,12 +105,12 @@ run_analysis
 ##     names(my_data) <- gsub("X", "X-Axis", names(my_data))
 ##     names(my_data) <- gsub("Y", "Y-Axis", names(my_data))
 ##     names(my_data) <- gsub("Z", "Z-Axis", names(my_data))
-##     write.table(my_data_casted, file = "tidy_data_first.txt")
+##     write.table(my_data, file = "tidy_data_first.txt")
 ##     my_data_melted <- melt(my_data, id = c("Subject_ID", "Activity"))
 ##     my_data_casted <- cast(my_data_melted, Subject_ID + Activity ~ 
 ##         variable, mean)
 ##     setwd(filelocation)
-##     write.table(my_data_casted, file = "tidy_data.txt")
+##     write.table(my_data_casted, file = "tidy_data.txt, row.name = FALSE")
 ##     my_data_casted
 ## }
 ```
