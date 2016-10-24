@@ -105,12 +105,14 @@ run_analysis
 ##     names(my_data) <- gsub("X", "X-Axis", names(my_data))
 ##     names(my_data) <- gsub("Y", "Y-Axis", names(my_data))
 ##     names(my_data) <- gsub("Z", "Z-Axis", names(my_data))
+##     setwd(filelocation)
 ##     write.table(my_data, file = "tidy_data_first.txt")
 ##     my_data_melted <- melt(my_data, id = c("Subject_ID", "Activity"))
 ##     my_data_casted <- cast(my_data_melted, Subject_ID + Activity ~ 
 ##         variable, mean)
 ##     setwd(filelocation)
-##     write.table(my_data_casted, file = "tidy_data.txt, row.name = FALSE")
+##     write.table(my_data_casted, file = "tidy_data.txt", row.names = FALSE, 
+##         col.names = TRUE)
 ##     my_data_casted
 ## }
 ```
