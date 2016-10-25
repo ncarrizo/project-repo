@@ -111,8 +111,7 @@ run_analysis
 ##     my_data_casted <- cast(my_data_melted, Subject_ID + Activity ~ 
 ##         variable, mean)
 ##     setwd(filelocation)
-##     write.table(my_data_casted, file = "tidy_data.txt", row.names = FALSE, 
-##         col.names = TRUE)
+##     write.table(my_data_casted, file = "tidy_data.txt")
 ##     my_data_casted
 ## }
 ```

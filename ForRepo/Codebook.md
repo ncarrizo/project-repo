@@ -52,13 +52,74 @@ names(tidy_data)
 ```
 
 ```
-##  [1] "V1"  "V2"  "V3"  "V4"  "V5"  "V6"  "V7"  "V8"  "V9"  "V10" "V11"
-## [12] "V12" "V13" "V14" "V15" "V16" "V17" "V18" "V19" "V20" "V21" "V22"
-## [23] "V23" "V24" "V25" "V26" "V27" "V28" "V29" "V30" "V31" "V32" "V33"
-## [34] "V34" "V35" "V36" "V37" "V38" "V39" "V40" "V41" "V42" "V43" "V44"
-## [45] "V45" "V46" "V47" "V48" "V49" "V50" "V51" "V52" "V53" "V54" "V55"
-## [56] "V56" "V57" "V58" "V59" "V60" "V61" "V62" "V63" "V64" "V65" "V66"
-## [67] "V67" "V68"
+##  [1] "Subject_ID"                                                      
+##  [2] "Activity"                                                        
+##  [3] "Accelerometer.Body.Signal.Time.Domain.Mean.X.Axis"               
+##  [4] "Accelerometer.Body.Signal.Time.Domain.Mean.Y.Axis"               
+##  [5] "Accelerometer.Body.Signal.Time.Domain.Mean.Z.Axis"               
+##  [6] "Accelerometer.Body.Signal.Time.Domain.Stand.Dev.X.Axis"          
+##  [7] "Accelerometer.Body.Signal.Time.Domain.Stand.Dev.Y.Axis"          
+##  [8] "Accelerometer.Body.Signal.Time.Domain.Stand.Dev.Z.Axis"          
+##  [9] "Accelerometer.Gravity.Signal.Time.Domain.Mean.X.Axis"            
+## [10] "Accelerometer.Gravity.Signal.Time.Domain.Mean.Y.Axis"            
+## [11] "Accelerometer.Gravity.Signal.Time.Domain.Mean.Z.Axis"            
+## [12] "Accelerometer.Gravity.Signal.Time.Domain.Stand.Dev.X.Axis"       
+## [13] "Accelerometer.Gravity.Signal.Time.Domain.Stand.Dev.Y.Axis"       
+## [14] "Accelerometer.Gravity.Signal.Time.Domain.Stand.Dev.Z.Axis"       
+## [15] "Accelerometer.Body.Jerk.Signal.Time.Domain.Mean.X.Axis"          
+## [16] "Accelerometer.Body.Jerk.Signal.Time.Domain.Mean.Y.Axis"          
+## [17] "Accelerometer.Body.Jerk.Signal.Time.Domain.Mean.Z.Axis"          
+## [18] "Accelerometer.Body.Jerk.Signal.Time.Domain.Stand.Dev.X.Axis"     
+## [19] "Accelerometer.Body.Jerk.Signal.Time.Domain.Stand.Dev.Y.Axis"     
+## [20] "Accelerometer.Body.Jerk.Signal.Time.Domain.Stand.Dev.Z.Axis"     
+## [21] "Gyroscope.Body.Signal.Time.Domain.Mean.X.Axis"                   
+## [22] "Gyroscope.Body.Signal.Time.Domain.Mean.Y.Axis"                   
+## [23] "Gyroscope.Body.Signal.Time.Domain.Mean.Z.Axis"                   
+## [24] "Gyroscope.Body.Signal.Time.Domain.Stand.Dev.X.Axis"              
+## [25] "Gyroscope.Body.Signal.Time.Domain.Stand.Dev.Y.Axis"              
+## [26] "Gyroscope.Body.Signal.Time.Domain.Stand.Dev.Z.Axis"              
+## [27] "Gyroscope.Body.Jerk.Signal.Time.Domain.Mean.X.Axis"              
+## [28] "Gyroscope.Body.Jerk.Signal.Time.Domain.Mean.Y.Axis"              
+## [29] "Gyroscope.Body.Jerk.Signal.Time.Domain.Mean.Z.Axis"              
+## [30] "Gyroscope.Body.Jerk.Signal.Time.Domain.Stand.Dev.X.Axis"         
+## [31] "Gyroscope.Body.Jerk.Signal.Time.Domain.Stand.Dev.Y.Axis"         
+## [32] "Gyroscope.Body.Jerk.Signal.Time.Domain.Stand.Dev.Z.Axis"         
+## [33] "Accelerometer.Body.Signal.Magnitude.Time.Domain.Mean."           
+## [34] "Accelerometer.Body.Signal.Magnitude.Time.Domain.Stand.Dev."      
+## [35] "Accelerometer.Gravity.Signal.Magnitude.Time.DomainMean."         
+## [36] "Accelerometer.Gravity.Signal.Magnitude.Time.DomainStand.Dev."    
+## [37] "Accelerometer.Body.Jerk.Signal.Maginitude.Time.Domain.Mean."     
+## [38] "Accelerometer.Body.Jerk.Signal.Maginitude.Time.Domain.Stand.Dev."
+## [39] "Gyroscope.Body.Signal.Magnitude.Time.Domain.Mean."               
+## [40] "Gyroscope.Body.Signal.Magnitude.Time.Domain.Stand.Dev."          
+## [41] "Gyroscope.Body.Jerk.Signal.Magnitude.Time.Domain.Mean."          
+## [42] "Gyroscope.Body.Jerk.Signal.Magnitude.Time.Domain.Stand.Dev."     
+## [43] "Accelerometer.Body.Signal.Frequency.Domain.Mean.X.Axis"          
+## [44] "Accelerometer.Body.Signal.Frequency.Domain.Mean.Y.Axis"          
+## [45] "Accelerometer.Body.Signal.Frequency.Domain.Mean.Z.Axis"          
+## [46] "Accelerometer.Body.Signal.Frequency.Domain.Stand.Dev.X.Axis"     
+## [47] "Accelerometer.Body.Signal.Frequency.Domain.Stand.Dev.Y.Axis"     
+## [48] "Accelerometer.Body.Signal.Frequency.Domain.Stand.Dev.Z.Axis"     
+## [49] "Accelerometer.Body.Jerk.Signal.Frequency.Domain.Mean.X.Axis"     
+## [50] "Accelerometer.Body.Jerk.Signal.Frequency.Domain.Mean.Y.Axis"     
+## [51] "Accelerometer.Body.Jerk.Signal.Frequency.Domain.Mean.Z.Axis"     
+## [52] "Accelerometer.Body.Jerk.Signal.Frequency.Domain.Stand.Dev.X.Axis"
+## [53] "Accelerometer.Body.Jerk.Signal.Frequency.Domain.Stand.Dev.Y.Axis"
+## [54] "Accelerometer.Body.Jerk.Signal.Frequency.Domain.Stand.Dev.Z.Axis"
+## [55] "Gyroscope.Body.Signal.Frequency.Domain.Mean.X.Axis"              
+## [56] "Gyroscope.Body.Signal.Frequency.Domain.Mean.Y.Axis"              
+## [57] "Gyroscope.Body.Signal.Frequency.Domain.Mean.Z.Axis"              
+## [58] "Gyroscope.Body.Signal.Frequency.Domain.Stand.Dev.X.Axis"         
+## [59] "Gyroscope.Body.Signal.Frequency.Domain.Stand.Dev.Y.Axis"         
+## [60] "Gyroscope.Body.Signal.Frequency.Domain.Stand.Dev.Z.Axis"         
+## [61] "Accelerometer.Body.Signal.Magnitude.Frequency.Domain.Mean."      
+## [62] "Accelerometer.Body.Signal.Magnitude.Frequency.Domain.Stand.Dev." 
+## [63] "Accelerometer.Body.Jerk.Signal.Frequency.Domain.MagMean."        
+## [64] "Accelerometer.Body.Jerk.Signal.Frequency.Domain.MagStand.Dev."   
+## [65] "Gyroscope.Body.Signal.Magnitude.Frequency.Domain.Mean."          
+## [66] "Gyroscope.Body.Signal.Magnitude.Frequency.Domain.Stand.Dev."     
+## [67] "Gyroscope.Body.Jerk.Signal.Magnitude.Frequency.Domain.Mean."     
+## [68] "Gyroscope.Body.Jerk.Signal.Magnitude.Frequency.Domain.Stand.Dev."
 ```
 
 * A summary of the data is provided below 
@@ -68,278 +129,475 @@ summary(tidy_data)
 ```
 
 ```
-##        V1                       V2                     V3     
-##  1      :  6   Activity          : 1   0.22159824394    :  1  
-##  10     :  6   LAYING            :30   0.233275439803922:  1  
-##  11     :  6   SITTING           :30   0.239507882205882:  1  
-##  12     :  6   STANDING          :30   0.242118808925   :  1  
-##  13     :  6   WALKING           :30   0.247164790395833:  1  
-##  14     :  6   WALKING_DOWNSTAIRS:30   0.24832674354    :  1  
-##  (Other):145   WALKING_UPSTAIRS  :30   (Other)          :175  
-##                     V4                        V5     
-##  -0.00130828765170213:  1   -0.07537846886     :  1  
-##  -0.00350299841730769:  1   -0.0868333315509804:  1  
-##  -0.00563047804309524:  1   -0.0891404038405797:  1  
-##  -0.00587732936326531:  1   -0.0892432745173913:  1  
-##  -0.00672550621304348:  1   -0.0910278793952381:  1  
-##  -0.00700418554517857:  1   -0.0928330165533333:  1  
-##  (Other)             :175   (Other)            :175  
-##                     V6                         V7     
-##  -0.00865921919565217:  1   -0.00232026501698113:  1  
-##  -0.0260971840270833 :  1   -0.00406536043541667:  1  
-##  -0.0457237779851064 :  1   -0.00555287692765957:  1  
-##  -0.0489049407963462 :  1   -0.011629910112     :  1  
-##  -0.0501350188513725 :  1   -0.0131721014395833 :  1  
-##  -0.0574100475102041 :  1   -0.0175797885542623 :  1  
-##  (Other)             :175   (Other)             :175  
-##                     V8                       V9     
-##  -0.00771530035714285:  1   -0.134832031403509:  1  
-##  -0.0194792388471698 :  1   -0.145483631627451:  1  
-##  -0.0579636469030769 :  1   -0.156852206467742:  1  
-##  -0.0636402447755319 :  1   -0.1719930545     :  1  
-##  -0.0717893558666667 :  1   -0.174349174822222:  1  
-##  -0.0738744931340426 :  1   -0.19913309       :  1  
-##  (Other)             :175   (Other)           :175  
-##                   V10                        V11     
-##  -0.002814673171875 :  1   -0.00199310572363636:  1  
-##  -0.010383816474    :  1   -0.00307981704708333:  1  
-##  -0.0199270225714286:  1   -0.00392556384476923:  1  
-##  -0.0314341738730769:  1   -0.00557416876082625:  1  
-##  -0.0352304645104762:  1   -0.0184608964392157 :  1  
-##  -0.0364533962277778:  1   -0.0221401100714154 :  1  
-##  (Other)            :175   (Other)             :175  
-##                  V12                      V13     
-##  -0.829554947808219:  1   -0.643578361424658:  1  
-##  -0.862136937254902:  1   -0.900511719787234:  1  
-##  -0.887746310350877:  1   -0.9010448505     :  1  
-##  -0.8968300184     :  1   -0.901317321632653:  1  
-##  -0.899726139487179:  1   -0.903923008269231:  1  
-##  -0.914221270096154:  1   -0.907231431296296:  1  
-##  (Other)           :175   (Other)           :175  
-##                  V14                      V15     
-##  -0.610161166287671:  1   0.0426880986186441:  1  
-##  -0.83693567475    :  1   0.0428631626711111:  1  
-##  -0.85236629022    :  1   0.045764401482    :  1  
-##  -0.858849467142857:  1   0.0541553164897959:  1  
-##  -0.862402791230769:  1   0.0560971909634615:  1  
-##  -0.864745838297872:  1   0.0578010605648148:  1  
-##  (Other)           :175   (Other)           :175  
-##                     V16                         V17     
-##  -0.000213838552075472:  1   -0.000143542544507042:  1  
-##  -0.000619102785106384:  1   -0.000175352166235294:  1  
-##  -0.000689019191836735:  1   -0.000374189681428571:  1  
-##  -0.000757069449090909:  1   -0.000673798876875   :  1  
-##  -0.000812387078431372:  1   -0.000685549292837838:  1  
-##  -0.000842715149193548:  1   -0.000704979340543859:  1  
-##  (Other)              :175   (Other)              :175  
-##                    V18                       V19     
-##  -0.00358338882727273:  1   -0.0123501104926829:  1  
-##  -0.00853992680952381:  1   -0.0128865483575   :  1  
-##  -0.012283860544898  :  1   -0.0166022362847458:  1  
-##  -0.01350661106      :  1   -0.0319265467387037:  1  
-##  -0.0167652227782609 :  1   -0.0347143855729423:  1  
-##  -0.023952574044375  :  1   -0.0413994646723529:  1  
-##  (Other)             :175   (Other)            :175  
-##                   V20                        V21     
-##  -0.0135136269      :  1   -0.00282641913096154:  1  
-##  -0.0200111148717949:  1   -0.00334085938813559:  1  
-##  -0.0293115056033898:  1   -0.00347655062271186:  1  
-##  -0.133634060621778 :  1   -0.00355974576923077:  1  
-##  -0.149488514397895 :  1   -0.00795668167188679:  1  
-##  -0.179390497475    :  1   -0.0079605026754386 :  1  
-##  (Other)            :175   (Other)             :175  
-##                    V22                         V23     
-##  -0.00247161973      :  1   -0.000233248224999999:  1  
-##  -0.00482329231914894:  1   -0.00546829763829787 :  1  
-##  -0.0139358043959184 :  1   -0.00779288021764706 :  1  
-##  -0.0163131590545455 :  1   -0.0325557522333333  :  1  
-##  -0.0172822168012963 :  1   -0.0441381886666667  :  1  
-##  -0.0237205719148936 :  1   -0.0724546025804878  :  1  
-##  (Other)             :175   (Other)              :175  
-##                   V24                       V25     
-##  -0.0264357957923077:  1   -0.0148392604279661:  1  
-##  -0.19830385328125  :  1   -0.0546077686594737:  1  
-##  -0.1992097184375   :  1   -0.0666980861414634:  1  
-##  -0.204939567711111 :  1   -0.0840481513184615:  1  
-##  -0.23294061427451  :  1   -0.104722161186078 :  1  
-##  -0.237349190997222 :  1   -0.114406108840577 :  1  
-##  (Other)            :175   (Other)            :175  
-##                   V26                       V27     
-##  -0.0314083457948718:  1   -0.0220916265065217:  1  
-##  -0.0317301153392157:  1   -0.0256452232354167:  1  
-##  -0.0353021837      :  1   -0.0264668968652174:  1  
-##  -0.0754447842395833:  1   -0.0266492977565217:  1  
-##  -0.0940797929729167:  1   -0.0337429578461538:  1  
-##  -0.104202986482692 :  1   -0.0349283489710526:  1  
-##  (Other)            :175   (Other)            :175  
-##                   V28                        V29     
-##  -0.0132022768074468:  1   -0.00694066389361702:  1  
-##  -0.0141113353615385:  1   -0.0137237620296296 :  1  
-##  -0.0189816250372549:  1   -0.0223482086545833 :  1  
-##  -0.0207749732407407:  1   -0.0236327911183673 :  1  
-##  -0.027552256948    :  1   -0.0270461061061224 :  1  
-##  -0.027919577097561 :  1   -0.0293255016148148 :  1  
-##  (Other)            :175   (Other)             :175  
-##                  V30                       V31     
-##  -0.16394489726087 :  1   -0.0146299196923077:  1  
-##  -0.170842676616   :  1   -0.0704526510842105:  1  
-##  -0.18260093354386 :  1   -0.127554090666667 :  1  
-##  -0.186763293747059:  1   -0.174136410738596 :  1  
-##  -0.207421854757895:  1   -0.193508405479167 :  1  
-##  -0.21166729682807 :  1   -0.238824827530612 :  1  
-##  (Other)           :175   (Other)            :175  
-##                   V32                         V33     
-##  -0.0344217467042553:  1   -0.000971394711666667:  1  
-##  -0.157682543983929 :  1   -0.0117536873784314  :  1  
-##  -0.166684422233333 :  1   -0.0128062276916667  :  1  
-##  -0.170814790834118 :  1   -0.0266623294757447  :  1  
-##  -0.1896044435      :  1   -0.0294634299553191  :  1  
-##  -0.213494065344231 :  1   -0.0373901122469355  :  1  
-##  (Other)            :175   (Other)              :175  
-##                   V34                         V35     
-##  -0.0135771208822581:  1   -0.000971394711666667:  1  
-##  -0.0156098198829787:  1   -0.0117536873784314  :  1  
-##  -0.0197686685018519:  1   -0.0128062276916667  :  1  
-##  -0.0224839122854545:  1   -0.0266623294757447  :  1  
-##  -0.0411340078469388:  1   -0.0294634299553191  :  1  
-##  -0.0414696051693878:  1   -0.0373901122469355  :  1  
-##  (Other)            :175   (Other)              :175  
-##                   V36                       V37     
-##  -0.0135771208822581:  1   -0.0179784626888889:  1  
-##  -0.0156098198829787:  1   -0.0372666071540476:  1  
-##  -0.0197686685018519:  1   -0.0429359302764706:  1  
-##  -0.0224839122854545:  1   -0.0612699838466667:  1  
-##  -0.0411340078469388:  1   -0.0637528559361702:  1  
-##  -0.0414696051693878:  1   -0.0668322430433333:  1  
-##  (Other)            :175   (Other)            :175  
-##                   V38                       V39     
-##  -0.02028505044     :  1   -0.00310243820125  :  1  
-##  -0.0257877197081633:  1   -0.0120968259523729:  1  
-##  -0.0268194363050847:  1   -0.0229640797463077:  1  
-##  -0.027557329277193 :  1   -0.0238468037578947:  1  
-##  -0.0292570509829787:  1   -0.06161577145     :  1  
-##  -0.0307693372041667:  1   -0.068246324026087 :  1  
-##  (Other)            :175   (Other)            :175  
-##                   V40                       V41     
-##  -0.0218463165461538:  1   -0.0463117766203704:  1  
-##  -0.0305762438706667:  1   -0.0829366854166667:  1  
-##  -0.0367853189588235:  1   -0.126189142894737 :  1  
-##  -0.0426276750979167:  1   -0.164699977592308 :  1  
-##  -0.0466291872078947:  1   -0.194893253196078 :  1  
-##  -0.0665144570666667:  1   -0.268183423577778 :  1  
-##  (Other)            :175   (Other)            :175  
-##                   V42                       V43     
-##  -0.0438985022538462:  1   -0.0226239171245652:  1  
-##  -0.0953401161070176:  1   -0.0299815666923077:  1  
-##  -0.111228416159583 :  1   -0.0343309987555556:  1  
-##  -0.149864146847059 :  1   -0.0421706943244898:  1  
-##  -0.157484866842105 :  1   -0.05435763951     :  1  
-##  -0.271487480103846 :  1   -0.0553996485285714:  1  
-##  (Other)            :175   (Other)            :175  
-##                    V44                       V45     
-##  -0.006237000044     :  1   -0.04769426376     :  1  
-##  -0.00770048300204082:  1   -0.070577489272549 :  1  
-##  -0.02122937175      :  1   -0.0729496941121951:  1  
-##  -0.0216637054241935 :  1   -0.0769713066866667:  1  
-##  -0.0219048103322034 :  1   -0.103705822657857 :  1  
-##  -0.0293832440223529 :  1   -0.104423357596154 :  1  
-##  (Other)             :175   (Other)            :175  
-##                    V46                        V47     
-##  -0.00473819670425532:  1   -0.00256294245192308:  1  
-##  -0.00838243761666667:  1   -0.00803987529661017:  1  
-##  -0.0211335627276471 :  1   -0.0191328333041667 :  1  
-##  -0.0260463260078947 :  1   -0.0252781736083333 :  1  
-##  -0.0282962478037037 :  1   -0.0439473073581818 :  1  
-##  -0.0349085946785455 :  1   -0.051628469647234  :  1  
-##  (Other)             :175   (Other)             :175  
-##                   V48                        V49     
-##  -0.0337965256573077:  1   -0.00701472271717392:  1  
-##  -0.0342347233914894:  1   -0.0268676982326087 :  1  
-##  -0.0349494927142857:  1   -0.0276638676122449 :  1  
-##  -0.0379716239787234:  1   -0.0305226686191489 :  1  
-##  -0.0783635041538461:  1   -0.0337820458644444 :  1  
-##  -0.0931447617846154:  1   -0.0367047077608696 :  1  
-##  (Other)            :175   (Other)             :175  
-##                    V50                       V51     
-##  -0.00309155313333333:  1   -0.0248789805888889:  1  
-##  -0.0127039720456522 :  1   -0.0572021324745763:  1  
-##  -0.0257952590634146 :  1   -0.106490372892632 :  1  
-##  -0.0269769415214286 :  1   -0.129367902596154 :  1  
-##  -0.0352255241130632 :  1   -0.196838264546667 :  1  
-##  -0.0439195137368421 :  1   -0.240679035428947 :  1  
-##  (Other)             :175   (Other)            :175  
-##                    V52                        V53     
-##  -0.00426289144680851:  1   -0.00175391954565217:  1  
-##  -0.0302396365755556 :  1   -0.00561498755362069:  1  
-##  -0.03105929456      :  1   -0.00722860241119048:  1  
-##  -0.0463867896444444 :  1   -0.0131695876025    :  1  
-##  -0.0522811342045455 :  1   -0.0148415165923077 :  1  
-##  -0.0677978520178571 :  1   -0.0153329520084746 :  1  
-##  (Other)             :175   (Other)             :175  
-##                    V54                       V55     
-##  -0.00623647528983051:  1   -0.0299969963043478:  1  
-##  -0.0846674186842105 :  1   -0.0629572600911111:  1  
-##  -0.0983930104846154 :  1   -0.0936248686019608:  1  
-##  -0.09851956305      :  1   -0.0954349339722222:  1  
-##  -0.190751539207018  :  1   -0.102063053808333 :  1  
-##  -0.227829841936346  :  1   -0.115065008156863 :  1  
-##  (Other)             :175   (Other)            :175  
-##                   V56                       V57     
-##  -0.0557022524693878:  1   -0.01050470716     :  1  
-##  -0.0973549846596154:  1   -0.0318694271979592:  1  
-##  -0.103059416434737 :  1   -0.034175027916383 :  1  
-##  -0.113162144460976 :  1   -0.0464142110215686:  1  
-##  -0.130327465789583 :  1   -0.06612935167     :  1  
-##  -0.133828886725532 :  1   -0.083501182326087 :  1  
-##  (Other)            :175   (Other)            :175  
-##                  V58                       V59     
-##  -0.108388809533846:  1   -0.028489571974359 :  1  
-##  -0.234252005895833:  1   -0.0335081597884211:  1  
-##  -0.253365630644444:  1   -0.0461356322868421:  1  
-##  -0.278386596338226:  1   -0.0478802512585366:  1  
-##  -0.279931528352941:  1   -0.079046721372549 :  1  
-##  -0.284532358444444:  1   -0.0941359695075472:  1  
-##  (Other)           :175   (Other)            :175  
-##                   V60                        V61     
-##  -0.0822521122215686:  1   -0.00353341793921569:  1  
-##  -0.1429742348125   :  1   -0.01907433524      :  1  
-##  -0.1503916379      :  1   -0.0231701626603636 :  1  
-##  -0.165554554220408 :  1   -0.0241584964891304 :  1  
-##  -0.180232949016949 :  1   -0.0759851813333333 :  1  
-##  -0.183508696647059 :  1   -0.07962876322      :  1  
-##  (Other)            :175   (Other)             :175  
-##                   V62                       V63     
-##  -0.0214787881723404:  1   -0.0128823827326087:  1  
-##  -0.0330868111229167:  1   -0.0180705701559322:  1  
-##  -0.0453930349148148:  1   -0.0282156656914894:  1  
-##  -0.0534137179170213:  1   -0.029912425338    :  1  
-##  -0.0575202606055556:  1   -0.0384187298547368:  1  
-##  -0.0616742840815789:  1   -0.0458020362119048:  1  
-##  (Other)            :175   (Other)            :175  
-##                   V64                        V65     
-##  -0.013953908696    :  1   -0.00036272967368421:  1  
-##  -0.0186734409634615:  1   -0.0143735434       :  1  
-##  -0.022138358       :  1   -0.0520065599062745 :  1  
-##  -0.0222869586038462:  1   -0.0787568406777778 :  1  
-##  -0.0310650270227451:  1   -0.0952460452365385 :  1  
-##  -0.0457372334118644:  1   -0.100566103524444  :  1  
-##  (Other)            :175   (Other)             :175  
-##                  V66                       V67     
-##  -0.061476584759322:  1   -0.0229045295641026:  1  
-##  -0.074331469755102:  1   -0.125179586744737 :  1  
-##  -0.141598402309615:  1   -0.132705384364583 :  1  
-##  -0.151472278383077:  1   -0.155339855862632 :  1  
-##  -0.151681987177778:  1   -0.180365335498431 :  1  
-##  -0.166969377765957:  1   -0.254747132274667 :  1  
-##  (Other)           :175   (Other)            :175  
-##                   V68     
-##  -0.0398573780185185:  1  
-##  -0.0841663774087719:  1  
-##  -0.143254547512821 :  1  
-##  -0.145733545496458 :  1  
-##  -0.171975765239216 :  1  
-##  -0.26298447        :  1  
-##  (Other)            :175
+##    Subject_ID                 Activity 
+##  Min.   : 1.0   LAYING            :30  
+##  1st Qu.: 8.0   SITTING           :30  
+##  Median :15.5   STANDING          :30  
+##  Mean   :15.5   WALKING           :30  
+##  3rd Qu.:23.0   WALKING_DOWNSTAIRS:30  
+##  Max.   :30.0   WALKING_UPSTAIRS  :30  
+##  Accelerometer.Body.Signal.Time.Domain.Mean.X.Axis
+##  Min.   :0.2216                                   
+##  1st Qu.:0.2712                                   
+##  Median :0.2770                                   
+##  Mean   :0.2743                                   
+##  3rd Qu.:0.2800                                   
+##  Max.   :0.3015                                   
+##  Accelerometer.Body.Signal.Time.Domain.Mean.Y.Axis
+##  Min.   :-0.040514                                
+##  1st Qu.:-0.020022                                
+##  Median :-0.017262                                
+##  Mean   :-0.017876                                
+##  3rd Qu.:-0.014936                                
+##  Max.   :-0.001308                                
+##  Accelerometer.Body.Signal.Time.Domain.Mean.Z.Axis
+##  Min.   :-0.15251                                 
+##  1st Qu.:-0.11207                                 
+##  Median :-0.10819                                 
+##  Mean   :-0.10916                                 
+##  3rd Qu.:-0.10443                                 
+##  Max.   :-0.07538                                 
+##  Accelerometer.Body.Signal.Time.Domain.Stand.Dev.X.Axis
+##  Min.   :-0.9961                                       
+##  1st Qu.:-0.9799                                       
+##  Median :-0.7526                                       
+##  Mean   :-0.5577                                       
+##  3rd Qu.:-0.1984                                       
+##  Max.   : 0.6269                                       
+##  Accelerometer.Body.Signal.Time.Domain.Stand.Dev.Y.Axis
+##  Min.   :-0.99024                                      
+##  1st Qu.:-0.94205                                      
+##  Median :-0.50897                                      
+##  Mean   :-0.46046                                      
+##  3rd Qu.:-0.03077                                      
+##  Max.   : 0.61694                                      
+##  Accelerometer.Body.Signal.Time.Domain.Stand.Dev.Z.Axis
+##  Min.   :-0.9877                                       
+##  1st Qu.:-0.9498                                       
+##  Median :-0.6518                                       
+##  Mean   :-0.5756                                       
+##  3rd Qu.:-0.2306                                       
+##  Max.   : 0.6090                                       
+##  Accelerometer.Gravity.Signal.Time.Domain.Mean.X.Axis
+##  Min.   :-0.6800                                     
+##  1st Qu.: 0.8376                                     
+##  Median : 0.9208                                     
+##  Mean   : 0.6975                                     
+##  3rd Qu.: 0.9425                                     
+##  Max.   : 0.9745                                     
+##  Accelerometer.Gravity.Signal.Time.Domain.Mean.Y.Axis
+##  Min.   :-0.47989                                    
+##  1st Qu.:-0.23319                                    
+##  Median :-0.12782                                    
+##  Mean   :-0.01621                                    
+##  3rd Qu.: 0.08773                                    
+##  Max.   : 0.95659                                    
+##  Accelerometer.Gravity.Signal.Time.Domain.Mean.Z.Axis
+##  Min.   :-0.49509                                    
+##  1st Qu.:-0.11726                                    
+##  Median : 0.02384                                    
+##  Mean   : 0.07413                                    
+##  3rd Qu.: 0.14946                                    
+##  Max.   : 0.95787                                    
+##  Accelerometer.Gravity.Signal.Time.Domain.Stand.Dev.X.Axis
+##  Min.   :-0.9968                                          
+##  1st Qu.:-0.9825                                          
+##  Median :-0.9695                                          
+##  Mean   :-0.9638                                          
+##  3rd Qu.:-0.9509                                          
+##  Max.   :-0.8296                                          
+##  Accelerometer.Gravity.Signal.Time.Domain.Stand.Dev.Y.Axis
+##  Min.   :-0.9942                                          
+##  1st Qu.:-0.9711                                          
+##  Median :-0.9590                                          
+##  Mean   :-0.9524                                          
+##  3rd Qu.:-0.9370                                          
+##  Max.   :-0.6436                                          
+##  Accelerometer.Gravity.Signal.Time.Domain.Stand.Dev.Z.Axis
+##  Min.   :-0.9910                                          
+##  1st Qu.:-0.9605                                          
+##  Median :-0.9450                                          
+##  Mean   :-0.9364                                          
+##  3rd Qu.:-0.9180                                          
+##  Max.   :-0.6102                                          
+##  Accelerometer.Body.Jerk.Signal.Time.Domain.Mean.X.Axis
+##  Min.   :0.04269                                       
+##  1st Qu.:0.07396                                       
+##  Median :0.07640                                       
+##  Mean   :0.07947                                       
+##  3rd Qu.:0.08330                                       
+##  Max.   :0.13019                                       
+##  Accelerometer.Body.Jerk.Signal.Time.Domain.Mean.Y.Axis
+##  Min.   :-0.0386872                                    
+##  1st Qu.: 0.0004664                                    
+##  Median : 0.0094698                                    
+##  Mean   : 0.0075652                                    
+##  3rd Qu.: 0.0134008                                    
+##  Max.   : 0.0568186                                    
+##  Accelerometer.Body.Jerk.Signal.Time.Domain.Mean.Z.Axis
+##  Min.   :-0.067458                                     
+##  1st Qu.:-0.010601                                     
+##  Median :-0.003861                                     
+##  Mean   :-0.004953                                     
+##  3rd Qu.: 0.001958                                     
+##  Max.   : 0.038053                                     
+##  Accelerometer.Body.Jerk.Signal.Time.Domain.Stand.Dev.X.Axis
+##  Min.   :-0.9946                                            
+##  1st Qu.:-0.9832                                            
+##  Median :-0.8104                                            
+##  Mean   :-0.5949                                            
+##  3rd Qu.:-0.2233                                            
+##  Max.   : 0.5443                                            
+##  Accelerometer.Body.Jerk.Signal.Time.Domain.Stand.Dev.Y.Axis
+##  Min.   :-0.9895                                            
+##  1st Qu.:-0.9724                                            
+##  Median :-0.7756                                            
+##  Mean   :-0.5654                                            
+##  3rd Qu.:-0.1483                                            
+##  Max.   : 0.3553                                            
+##  Accelerometer.Body.Jerk.Signal.Time.Domain.Stand.Dev.Z.Axis
+##  Min.   :-0.99329                                           
+##  1st Qu.:-0.98266                                           
+##  Median :-0.88366                                           
+##  Mean   :-0.73596                                           
+##  3rd Qu.:-0.51212                                           
+##  Max.   : 0.03102                                           
+##  Gyroscope.Body.Signal.Time.Domain.Mean.X.Axis
+##  Min.   :-0.20578                             
+##  1st Qu.:-0.04712                             
+##  Median :-0.02871                             
+##  Mean   :-0.03244                             
+##  3rd Qu.:-0.01676                             
+##  Max.   : 0.19270                             
+##  Gyroscope.Body.Signal.Time.Domain.Mean.Y.Axis
+##  Min.   :-0.20421                             
+##  1st Qu.:-0.08955                             
+##  Median :-0.07318                             
+##  Mean   :-0.07426                             
+##  3rd Qu.:-0.06113                             
+##  Max.   : 0.02747                             
+##  Gyroscope.Body.Signal.Time.Domain.Mean.Z.Axis
+##  Min.   :-0.07245                             
+##  1st Qu.: 0.07475                             
+##  Median : 0.08512                             
+##  Mean   : 0.08744                             
+##  3rd Qu.: 0.10177                             
+##  Max.   : 0.17910                             
+##  Gyroscope.Body.Signal.Time.Domain.Stand.Dev.X.Axis
+##  Min.   :-0.9943                                   
+##  1st Qu.:-0.9735                                   
+##  Median :-0.7890                                   
+##  Mean   :-0.6916                                   
+##  3rd Qu.:-0.4414                                   
+##  Max.   : 0.2677                                   
+##  Gyroscope.Body.Signal.Time.Domain.Stand.Dev.Y.Axis
+##  Min.   :-0.9942                                   
+##  1st Qu.:-0.9629                                   
+##  Median :-0.8017                                   
+##  Mean   :-0.6533                                   
+##  3rd Qu.:-0.4196                                   
+##  Max.   : 0.4765                                   
+##  Gyroscope.Body.Signal.Time.Domain.Stand.Dev.Z.Axis
+##  Min.   :-0.9855                                   
+##  1st Qu.:-0.9609                                   
+##  Median :-0.8010                                   
+##  Mean   :-0.6164                                   
+##  3rd Qu.:-0.3106                                   
+##  Max.   : 0.5649                                   
+##  Gyroscope.Body.Jerk.Signal.Time.Domain.Mean.X.Axis
+##  Min.   :-0.15721                                  
+##  1st Qu.:-0.10322                                  
+##  Median :-0.09868                                  
+##  Mean   :-0.09606                                  
+##  3rd Qu.:-0.09110                                  
+##  Max.   :-0.02209                                  
+##  Gyroscope.Body.Jerk.Signal.Time.Domain.Mean.Y.Axis
+##  Min.   :-0.07681                                  
+##  1st Qu.:-0.04552                                  
+##  Median :-0.04112                                  
+##  Mean   :-0.04269                                  
+##  3rd Qu.:-0.03842                                  
+##  Max.   :-0.01320                                  
+##  Gyroscope.Body.Jerk.Signal.Time.Domain.Mean.Z.Axis
+##  Min.   :-0.092500                                 
+##  1st Qu.:-0.061725                                 
+##  Median :-0.053430                                 
+##  Mean   :-0.054802                                 
+##  3rd Qu.:-0.048985                                 
+##  Max.   :-0.006941                                 
+##  Gyroscope.Body.Jerk.Signal.Time.Domain.Stand.Dev.X.Axis
+##  Min.   :-0.9965                                        
+##  1st Qu.:-0.9800                                        
+##  Median :-0.8396                                        
+##  Mean   :-0.7036                                        
+##  3rd Qu.:-0.4629                                        
+##  Max.   : 0.1791                                        
+##  Gyroscope.Body.Jerk.Signal.Time.Domain.Stand.Dev.Y.Axis
+##  Min.   :-0.9971                                        
+##  1st Qu.:-0.9832                                        
+##  Median :-0.8942                                        
+##  Mean   :-0.7636                                        
+##  3rd Qu.:-0.5861                                        
+##  Max.   : 0.2959                                        
+##  Gyroscope.Body.Jerk.Signal.Time.Domain.Stand.Dev.Z.Axis
+##  Min.   :-0.9954                                        
+##  1st Qu.:-0.9848                                        
+##  Median :-0.8610                                        
+##  Mean   :-0.7096                                        
+##  3rd Qu.:-0.4741                                        
+##  Max.   : 0.1932                                        
+##  Accelerometer.Body.Signal.Magnitude.Time.Domain.Mean.
+##  Min.   :-0.9865                                      
+##  1st Qu.:-0.9573                                      
+##  Median :-0.4829                                      
+##  Mean   :-0.4973                                      
+##  3rd Qu.:-0.0919                                      
+##  Max.   : 0.6446                                      
+##  Accelerometer.Body.Signal.Magnitude.Time.Domain.Stand.Dev.
+##  Min.   :-0.9865                                           
+##  1st Qu.:-0.9430                                           
+##  Median :-0.6074                                           
+##  Mean   :-0.5439                                           
+##  3rd Qu.:-0.2090                                           
+##  Max.   : 0.4284                                           
+##  Accelerometer.Gravity.Signal.Magnitude.Time.DomainMean.
+##  Min.   :-0.9865                                        
+##  1st Qu.:-0.9573                                        
+##  Median :-0.4829                                        
+##  Mean   :-0.4973                                        
+##  3rd Qu.:-0.0919                                        
+##  Max.   : 0.6446                                        
+##  Accelerometer.Gravity.Signal.Magnitude.Time.DomainStand.Dev.
+##  Min.   :-0.9865                                             
+##  1st Qu.:-0.9430                                             
+##  Median :-0.6074                                             
+##  Mean   :-0.5439                                             
+##  3rd Qu.:-0.2090                                             
+##  Max.   : 0.4284                                             
+##  Accelerometer.Body.Jerk.Signal.Maginitude.Time.Domain.Mean.
+##  Min.   :-0.9928                                            
+##  1st Qu.:-0.9807                                            
+##  Median :-0.8168                                            
+##  Mean   :-0.6079                                            
+##  3rd Qu.:-0.2456                                            
+##  Max.   : 0.4345                                            
+##  Accelerometer.Body.Jerk.Signal.Maginitude.Time.Domain.Stand.Dev.
+##  Min.   :-0.9946                                                 
+##  1st Qu.:-0.9765                                                 
+##  Median :-0.8014                                                 
+##  Mean   :-0.5842                                                 
+##  3rd Qu.:-0.2173                                                 
+##  Max.   : 0.4506                                                 
+##  Gyroscope.Body.Signal.Magnitude.Time.Domain.Mean.
+##  Min.   :-0.9807                                  
+##  1st Qu.:-0.9461                                  
+##  Median :-0.6551                                  
+##  Mean   :-0.5652                                  
+##  3rd Qu.:-0.2159                                  
+##  Max.   : 0.4180                                  
+##  Gyroscope.Body.Signal.Magnitude.Time.Domain.Stand.Dev.
+##  Min.   :-0.9814                                       
+##  1st Qu.:-0.9476                                       
+##  Median :-0.7420                                       
+##  Mean   :-0.6304                                       
+##  3rd Qu.:-0.3602                                       
+##  Max.   : 0.3000                                       
+##  Gyroscope.Body.Jerk.Signal.Magnitude.Time.Domain.Mean.
+##  Min.   :-0.99732                                      
+##  1st Qu.:-0.98515                                      
+##  Median :-0.86479                                      
+##  Mean   :-0.73637                                      
+##  3rd Qu.:-0.51186                                      
+##  Max.   : 0.08758                                      
+##  Gyroscope.Body.Jerk.Signal.Magnitude.Time.Domain.Stand.Dev.
+##  Min.   :-0.9977                                            
+##  1st Qu.:-0.9805                                            
+##  Median :-0.8809                                            
+##  Mean   :-0.7550                                            
+##  3rd Qu.:-0.5767                                            
+##  Max.   : 0.2502                                            
+##  Accelerometer.Body.Signal.Frequency.Domain.Mean.X.Axis
+##  Min.   :-0.9952                                       
+##  1st Qu.:-0.9787                                       
+##  Median :-0.7691                                       
+##  Mean   :-0.5758                                       
+##  3rd Qu.:-0.2174                                       
+##  Max.   : 0.5370                                       
+##  Accelerometer.Body.Signal.Frequency.Domain.Mean.Y.Axis
+##  Min.   :-0.98903                                      
+##  1st Qu.:-0.95361                                      
+##  Median :-0.59498                                      
+##  Mean   :-0.48873                                      
+##  3rd Qu.:-0.06341                                      
+##  Max.   : 0.52419                                      
+##  Accelerometer.Body.Signal.Frequency.Domain.Mean.Z.Axis
+##  Min.   :-0.9895                                       
+##  1st Qu.:-0.9619                                       
+##  Median :-0.7236                                       
+##  Mean   :-0.6297                                       
+##  3rd Qu.:-0.3183                                       
+##  Max.   : 0.2807                                       
+##  Accelerometer.Body.Signal.Frequency.Domain.Stand.Dev.X.Axis
+##  Min.   :-0.9966                                            
+##  1st Qu.:-0.9820                                            
+##  Median :-0.7470                                            
+##  Mean   :-0.5522                                            
+##  3rd Qu.:-0.1966                                            
+##  Max.   : 0.6585                                            
+##  Accelerometer.Body.Signal.Frequency.Domain.Stand.Dev.Y.Axis
+##  Min.   :-0.99068                                           
+##  1st Qu.:-0.94042                                           
+##  Median :-0.51338                                           
+##  Mean   :-0.48148                                           
+##  3rd Qu.:-0.07913                                           
+##  Max.   : 0.56019                                           
+##  Accelerometer.Body.Signal.Frequency.Domain.Stand.Dev.Z.Axis
+##  Min.   :-0.9872                                            
+##  1st Qu.:-0.9459                                            
+##  Median :-0.6441                                            
+##  Mean   :-0.5824                                            
+##  3rd Qu.:-0.2655                                            
+##  Max.   : 0.6871                                            
+##  Accelerometer.Body.Jerk.Signal.Frequency.Domain.Mean.X.Axis
+##  Min.   :-0.9946                                            
+##  1st Qu.:-0.9828                                            
+##  Median :-0.8126                                            
+##  Mean   :-0.6139                                            
+##  3rd Qu.:-0.2820                                            
+##  Max.   : 0.4743                                            
+##  Accelerometer.Body.Jerk.Signal.Frequency.Domain.Mean.Y.Axis
+##  Min.   :-0.9894                                            
+##  1st Qu.:-0.9725                                            
+##  Median :-0.7817                                            
+##  Mean   :-0.5882                                            
+##  3rd Qu.:-0.1963                                            
+##  Max.   : 0.2767                                            
+##  Accelerometer.Body.Jerk.Signal.Frequency.Domain.Mean.Z.Axis
+##  Min.   :-0.9920                                            
+##  1st Qu.:-0.9796                                            
+##  Median :-0.8707                                            
+##  Mean   :-0.7144                                            
+##  3rd Qu.:-0.4697                                            
+##  Max.   : 0.1578                                            
+##  Accelerometer.Body.Jerk.Signal.Frequency.Domain.Stand.Dev.X.Axis
+##  Min.   :-0.9951                                                 
+##  1st Qu.:-0.9847                                                 
+##  Median :-0.8254                                                 
+##  Mean   :-0.6121                                                 
+##  3rd Qu.:-0.2475                                                 
+##  Max.   : 0.4768                                                 
+##  Accelerometer.Body.Jerk.Signal.Frequency.Domain.Stand.Dev.Y.Axis
+##  Min.   :-0.9905                                                 
+##  1st Qu.:-0.9737                                                 
+##  Median :-0.7852                                                 
+##  Mean   :-0.5707                                                 
+##  3rd Qu.:-0.1685                                                 
+##  Max.   : 0.3498                                                 
+##  Accelerometer.Body.Jerk.Signal.Frequency.Domain.Stand.Dev.Z.Axis
+##  Min.   :-0.993108                                               
+##  1st Qu.:-0.983747                                               
+##  Median :-0.895121                                               
+##  Mean   :-0.756489                                               
+##  3rd Qu.:-0.543787                                               
+##  Max.   :-0.006236                                               
+##  Gyroscope.Body.Signal.Frequency.Domain.Mean.X.Axis
+##  Min.   :-0.9931                                   
+##  1st Qu.:-0.9697                                   
+##  Median :-0.7300                                   
+##  Mean   :-0.6367                                   
+##  3rd Qu.:-0.3387                                   
+##  Max.   : 0.4750                                   
+##  Gyroscope.Body.Signal.Frequency.Domain.Mean.Y.Axis
+##  Min.   :-0.9940                                   
+##  1st Qu.:-0.9700                                   
+##  Median :-0.8141                                   
+##  Mean   :-0.6767                                   
+##  3rd Qu.:-0.4458                                   
+##  Max.   : 0.3288                                   
+##  Gyroscope.Body.Signal.Frequency.Domain.Mean.Z.Axis
+##  Min.   :-0.9860                                   
+##  1st Qu.:-0.9624                                   
+##  Median :-0.7909                                   
+##  Mean   :-0.6044                                   
+##  3rd Qu.:-0.2635                                   
+##  Max.   : 0.4924                                   
+##  Gyroscope.Body.Signal.Frequency.Domain.Stand.Dev.X.Axis
+##  Min.   :-0.9947                                        
+##  1st Qu.:-0.9750                                        
+##  Median :-0.8086                                        
+##  Mean   :-0.7110                                        
+##  3rd Qu.:-0.4813                                        
+##  Max.   : 0.1966                                        
+##  Gyroscope.Body.Signal.Frequency.Domain.Stand.Dev.Y.Axis
+##  Min.   :-0.9944                                        
+##  1st Qu.:-0.9602                                        
+##  Median :-0.7964                                        
+##  Mean   :-0.6454                                        
+##  3rd Qu.:-0.4154                                        
+##  Max.   : 0.6462                                        
+##  Gyroscope.Body.Signal.Frequency.Domain.Stand.Dev.Z.Axis
+##  Min.   :-0.9867                                        
+##  1st Qu.:-0.9643                                        
+##  Median :-0.8224                                        
+##  Mean   :-0.6577                                        
+##  3rd Qu.:-0.3916                                        
+##  Max.   : 0.5225                                        
+##  Accelerometer.Body.Signal.Magnitude.Frequency.Domain.Mean.
+##  Min.   :-0.9868                                           
+##  1st Qu.:-0.9560                                           
+##  Median :-0.6703                                           
+##  Mean   :-0.5365                                           
+##  3rd Qu.:-0.1622                                           
+##  Max.   : 0.5866                                           
+##  Accelerometer.Body.Signal.Magnitude.Frequency.Domain.Stand.Dev.
+##  Min.   :-0.9876                                                
+##  1st Qu.:-0.9452                                                
+##  Median :-0.6513                                                
+##  Mean   :-0.6210                                                
+##  3rd Qu.:-0.3654                                                
+##  Max.   : 0.1787                                                
+##  Accelerometer.Body.Jerk.Signal.Frequency.Domain.MagMean.
+##  Min.   :-0.9940                                         
+##  1st Qu.:-0.9770                                         
+##  Median :-0.7940                                         
+##  Mean   :-0.5756                                         
+##  3rd Qu.:-0.1872                                         
+##  Max.   : 0.5384                                         
+##  Accelerometer.Body.Jerk.Signal.Frequency.Domain.MagStand.Dev.
+##  Min.   :-0.9944                                              
+##  1st Qu.:-0.9752                                              
+##  Median :-0.8126                                              
+##  Mean   :-0.5992                                              
+##  3rd Qu.:-0.2668                                              
+##  Max.   : 0.3163                                              
+##  Gyroscope.Body.Signal.Magnitude.Frequency.Domain.Mean.
+##  Min.   :-0.9865                                       
+##  1st Qu.:-0.9616                                       
+##  Median :-0.7657                                       
+##  Mean   :-0.6671                                       
+##  3rd Qu.:-0.4087                                       
+##  Max.   : 0.2040                                       
+##  Gyroscope.Body.Signal.Magnitude.Frequency.Domain.Stand.Dev.
+##  Min.   :-0.9815                                            
+##  1st Qu.:-0.9488                                            
+##  Median :-0.7727                                            
+##  Mean   :-0.6723                                            
+##  3rd Qu.:-0.4277                                            
+##  Max.   : 0.2367                                            
+##  Gyroscope.Body.Jerk.Signal.Magnitude.Frequency.Domain.Mean.
+##  Min.   :-0.9976                                            
+##  1st Qu.:-0.9813                                            
+##  Median :-0.8779                                            
+##  Mean   :-0.7564                                            
+##  3rd Qu.:-0.5831                                            
+##  Max.   : 0.1466                                            
+##  Gyroscope.Body.Jerk.Signal.Magnitude.Frequency.Domain.Stand.Dev.
+##  Min.   :-0.9976                                                 
+##  1st Qu.:-0.9802                                                 
+##  Median :-0.8941                                                 
+##  Mean   :-0.7715                                                 
+##  3rd Qu.:-0.6081                                                 
+##  Max.   : 0.2878
 ```
 
 ###Variable 1
@@ -351,7 +609,7 @@ class(tidy_data[,1])
 ```
 
 ```
-## [1] "factor"
+## [1] "integer"
 ```
 The unique values are the numbers 1 through 30, for each volunteer.
 
@@ -373,9 +631,8 @@ levels(tidy_data[,2])
 ```
 
 ```
-## [1] "Activity"           "LAYING"             "SITTING"           
-## [4] "STANDING"           "WALKING"            "WALKING_DOWNSTAIRS"
-## [7] "WALKING_UPSTAIRS"
+## [1] "LAYING"             "SITTING"            "STANDING"          
+## [4] "WALKING"            "WALKING_DOWNSTAIRS" "WALKING_UPSTAIRS"
 ```
 
 ###Variables 3, 4, 5, 6, 7, and 8
@@ -386,7 +643,12 @@ names(tidy_data[,3:8])
 ```
 
 ```
-## [1] "V3" "V4" "V5" "V6" "V7" "V8"
+## [1] "Accelerometer.Body.Signal.Time.Domain.Mean.X.Axis"     
+## [2] "Accelerometer.Body.Signal.Time.Domain.Mean.Y.Axis"     
+## [3] "Accelerometer.Body.Signal.Time.Domain.Mean.Z.Axis"     
+## [4] "Accelerometer.Body.Signal.Time.Domain.Stand.Dev.X.Axis"
+## [5] "Accelerometer.Body.Signal.Time.Domain.Stand.Dev.Y.Axis"
+## [6] "Accelerometer.Body.Signal.Time.Domain.Stand.Dev.Z.Axis"
 ```
 
 
@@ -398,7 +660,12 @@ names(tidy_data[,9:14])
 ```
 
 ```
-## [1] "V9"  "V10" "V11" "V12" "V13" "V14"
+## [1] "Accelerometer.Gravity.Signal.Time.Domain.Mean.X.Axis"     
+## [2] "Accelerometer.Gravity.Signal.Time.Domain.Mean.Y.Axis"     
+## [3] "Accelerometer.Gravity.Signal.Time.Domain.Mean.Z.Axis"     
+## [4] "Accelerometer.Gravity.Signal.Time.Domain.Stand.Dev.X.Axis"
+## [5] "Accelerometer.Gravity.Signal.Time.Domain.Stand.Dev.Y.Axis"
+## [6] "Accelerometer.Gravity.Signal.Time.Domain.Stand.Dev.Z.Axis"
 ```
 
 ###Variables 15, 16, 17, 18, 19, and 20
@@ -409,7 +676,12 @@ names(tidy_data[,15:20])
 ```
 
 ```
-## [1] "V15" "V16" "V17" "V18" "V19" "V20"
+## [1] "Accelerometer.Body.Jerk.Signal.Time.Domain.Mean.X.Axis"     
+## [2] "Accelerometer.Body.Jerk.Signal.Time.Domain.Mean.Y.Axis"     
+## [3] "Accelerometer.Body.Jerk.Signal.Time.Domain.Mean.Z.Axis"     
+## [4] "Accelerometer.Body.Jerk.Signal.Time.Domain.Stand.Dev.X.Axis"
+## [5] "Accelerometer.Body.Jerk.Signal.Time.Domain.Stand.Dev.Y.Axis"
+## [6] "Accelerometer.Body.Jerk.Signal.Time.Domain.Stand.Dev.Z.Axis"
 ```
 
 ###Variables 21, 22, 23, 24, 25, and 26
@@ -420,7 +692,12 @@ names(tidy_data[,21:26])
 ```
 
 ```
-## [1] "V21" "V22" "V23" "V24" "V25" "V26"
+## [1] "Gyroscope.Body.Signal.Time.Domain.Mean.X.Axis"     
+## [2] "Gyroscope.Body.Signal.Time.Domain.Mean.Y.Axis"     
+## [3] "Gyroscope.Body.Signal.Time.Domain.Mean.Z.Axis"     
+## [4] "Gyroscope.Body.Signal.Time.Domain.Stand.Dev.X.Axis"
+## [5] "Gyroscope.Body.Signal.Time.Domain.Stand.Dev.Y.Axis"
+## [6] "Gyroscope.Body.Signal.Time.Domain.Stand.Dev.Z.Axis"
 ```
 
 ###Variables 27, 28, 29, 30, 31, and 32
@@ -431,7 +708,12 @@ names(tidy_data[,27:32])
 ```
 
 ```
-## [1] "V27" "V28" "V29" "V30" "V31" "V32"
+## [1] "Gyroscope.Body.Jerk.Signal.Time.Domain.Mean.X.Axis"     
+## [2] "Gyroscope.Body.Jerk.Signal.Time.Domain.Mean.Y.Axis"     
+## [3] "Gyroscope.Body.Jerk.Signal.Time.Domain.Mean.Z.Axis"     
+## [4] "Gyroscope.Body.Jerk.Signal.Time.Domain.Stand.Dev.X.Axis"
+## [5] "Gyroscope.Body.Jerk.Signal.Time.Domain.Stand.Dev.Y.Axis"
+## [6] "Gyroscope.Body.Jerk.Signal.Time.Domain.Stand.Dev.Z.Axis"
 ```
 
 ###Variables 33 and 34
@@ -442,7 +724,8 @@ names(tidy_data[,33:34])
 ```
 
 ```
-## [1] "V33" "V34"
+## [1] "Accelerometer.Body.Signal.Magnitude.Time.Domain.Mean."     
+## [2] "Accelerometer.Body.Signal.Magnitude.Time.Domain.Stand.Dev."
 ```
 
 ###Variables 35 and 36
@@ -453,7 +736,8 @@ names(tidy_data[,35:36])
 ```
 
 ```
-## [1] "V35" "V36"
+## [1] "Accelerometer.Gravity.Signal.Magnitude.Time.DomainMean."     
+## [2] "Accelerometer.Gravity.Signal.Magnitude.Time.DomainStand.Dev."
 ```
 
 ###Variables 37 and 38
@@ -464,7 +748,8 @@ names(tidy_data[,37:38])
 ```
 
 ```
-## [1] "V37" "V38"
+## [1] "Accelerometer.Body.Jerk.Signal.Maginitude.Time.Domain.Mean."     
+## [2] "Accelerometer.Body.Jerk.Signal.Maginitude.Time.Domain.Stand.Dev."
 ```
 
 ###Variables 39 and 40
@@ -475,7 +760,8 @@ names(tidy_data[,39:40])
 ```
 
 ```
-## [1] "V39" "V40"
+## [1] "Gyroscope.Body.Signal.Magnitude.Time.Domain.Mean."     
+## [2] "Gyroscope.Body.Signal.Magnitude.Time.Domain.Stand.Dev."
 ```
 
 
@@ -487,7 +773,8 @@ names(tidy_data[,41:42])
 ```
 
 ```
-## [1] "V41" "V42"
+## [1] "Gyroscope.Body.Jerk.Signal.Magnitude.Time.Domain.Mean."     
+## [2] "Gyroscope.Body.Jerk.Signal.Magnitude.Time.Domain.Stand.Dev."
 ```
 
 ###Variables 43, 44, 45, 46, 47 and 48
@@ -498,7 +785,12 @@ names(tidy_data[,43:48])
 ```
 
 ```
-## [1] "V43" "V44" "V45" "V46" "V47" "V48"
+## [1] "Accelerometer.Body.Signal.Frequency.Domain.Mean.X.Axis"     
+## [2] "Accelerometer.Body.Signal.Frequency.Domain.Mean.Y.Axis"     
+## [3] "Accelerometer.Body.Signal.Frequency.Domain.Mean.Z.Axis"     
+## [4] "Accelerometer.Body.Signal.Frequency.Domain.Stand.Dev.X.Axis"
+## [5] "Accelerometer.Body.Signal.Frequency.Domain.Stand.Dev.Y.Axis"
+## [6] "Accelerometer.Body.Signal.Frequency.Domain.Stand.Dev.Z.Axis"
 ```
 
 ###Variables 49, 50, 51, 52, 53 and 54
@@ -509,7 +801,12 @@ names(tidy_data[,49:54])
 ```
 
 ```
-## [1] "V49" "V50" "V51" "V52" "V53" "V54"
+## [1] "Accelerometer.Body.Jerk.Signal.Frequency.Domain.Mean.X.Axis"     
+## [2] "Accelerometer.Body.Jerk.Signal.Frequency.Domain.Mean.Y.Axis"     
+## [3] "Accelerometer.Body.Jerk.Signal.Frequency.Domain.Mean.Z.Axis"     
+## [4] "Accelerometer.Body.Jerk.Signal.Frequency.Domain.Stand.Dev.X.Axis"
+## [5] "Accelerometer.Body.Jerk.Signal.Frequency.Domain.Stand.Dev.Y.Axis"
+## [6] "Accelerometer.Body.Jerk.Signal.Frequency.Domain.Stand.Dev.Z.Axis"
 ```
 
 ###Variables 55, 56, 57, 58, 59 and 60
@@ -520,7 +817,12 @@ names(tidy_data[,55:60])
 ```
 
 ```
-## [1] "V55" "V56" "V57" "V58" "V59" "V60"
+## [1] "Gyroscope.Body.Signal.Frequency.Domain.Mean.X.Axis"     
+## [2] "Gyroscope.Body.Signal.Frequency.Domain.Mean.Y.Axis"     
+## [3] "Gyroscope.Body.Signal.Frequency.Domain.Mean.Z.Axis"     
+## [4] "Gyroscope.Body.Signal.Frequency.Domain.Stand.Dev.X.Axis"
+## [5] "Gyroscope.Body.Signal.Frequency.Domain.Stand.Dev.Y.Axis"
+## [6] "Gyroscope.Body.Signal.Frequency.Domain.Stand.Dev.Z.Axis"
 ```
 
 ###Variables 61 and 62
@@ -531,7 +833,8 @@ names(tidy_data[,61:62])
 ```
 
 ```
-## [1] "V61" "V62"
+## [1] "Accelerometer.Body.Signal.Magnitude.Frequency.Domain.Mean."     
+## [2] "Accelerometer.Body.Signal.Magnitude.Frequency.Domain.Stand.Dev."
 ```
 
 ###Variable 63 and 64
@@ -542,7 +845,8 @@ names(tidy_data[,63:64])
 ```
 
 ```
-## [1] "V63" "V64"
+## [1] "Accelerometer.Body.Jerk.Signal.Frequency.Domain.MagMean."     
+## [2] "Accelerometer.Body.Jerk.Signal.Frequency.Domain.MagStand.Dev."
 ```
 
 ###Variable 65 and 66
@@ -553,7 +857,8 @@ names(tidy_data[,65:66])
 ```
 
 ```
-## [1] "V65" "V66"
+## [1] "Gyroscope.Body.Signal.Magnitude.Frequency.Domain.Mean."     
+## [2] "Gyroscope.Body.Signal.Magnitude.Frequency.Domain.Stand.Dev."
 ```
 
 
@@ -565,7 +870,8 @@ names(tidy_data[,67:68])
 ```
 
 ```
-## [1] "V67" "V68"
+## [1] "Gyroscope.Body.Jerk.Signal.Magnitude.Frequency.Domain.Mean."     
+## [2] "Gyroscope.Body.Jerk.Signal.Magnitude.Frequency.Domain.Stand.Dev."
 ```
 
 
