@@ -102,7 +102,6 @@ run_analysis <- function(filelocation = "~/Documents/GettingDataCoursera/CourseP
     
     ## Write file with second tidy dataset
     setwd(filelocation)
-    write.table(my_data_casted, file = "tidy_data.txt", row.names = FALSE, 
-                col.names = TRUE)
+    write.table(my_data_casted, file = "tidy_data.txt", row.names = FALSE)
     my_data_casted
 }
